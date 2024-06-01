@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- HEADER/DISCLAIMER
  
-Project:  Project1-About Me
+Project:  Project2-About Me
 Name: Mitchel Bigler
-Submitted: 5/17/24
+Submitted: 5/31/24
  
 I declare that the following source code was written by me, or provided
 by the instructor for this project. I understand that copying source
@@ -13,143 +13,134 @@ I acknowledge that  If I am found in violation of this policy this may result
 in a zero grade, a permanent record on file and possibly immediate failure of the class.
  
 --REFLECTION--
-This assignment was a good way for me to learn how to better use the
-HTML tags that I learned through the course this week. It gave me a
-good variety of attributes to recall and implement.
-I was able to refer to my notes for most of the basic elements, but for
-all of the extra items I had to look them up and read documentation or
-other examples. I took a web design class years ago in high school and
-used my very basic knowledge of CSS to link the stylesheet and get it
-done.
+This assignment taught me a lot about CSS. I now know that I still have a lot
+to learn about positioning. I never expected it to be so difficult. I enjoyed learning
+how to make a fixed header and attempting to create a repeating pattern- even though
+it ended up looking like a pattern for a pillowcase :/ My next attempt will be better.
 
 --SELF GRADE--
-HEADER            A
-PERSONAL INFO     A
-FAVE BOOKS        A
-HAIKU             A
-ESSAY             A
-SCHEDULE          A
+BODY        A
+NAME        A
+PORTRAIT    A
+HEADINGS    A
+SCHEDULE    A
 
 --EXTRA ITEMS COMPLETED--Minimum of 5
-REPEATING BKG IMG (2pts)       YES
-CHANGE FONT (2pts)             YES
-RT ALIGN PHOTO (2pts)          NO
-INDENT/CENTER HAIKU (2pts)     YES
-TABLE-TEXT ALIGN (2pts)        YES
-TABLE-COLOR CODE (2pts)        NO
-TABLE-EQUAL COL WIDTH (2pts)   YES
+FLOATING DIV (5pts)    NO
+STRIPED TABLE (5pts)   NO
+MODAL PORTRAIT (10pts) NO
+ARTISTIC MERIT (10pts) YES (fixed header, div border, color scheme, and made a repeating background)
 
 -->
 <html>
 <head>
     <title>About Mitch</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header>
         <h1>Mitchel Bigler</h1>
-        <img src="self_pic.jpg" alt="Picture of Mitch">
-        <hr>
     </header>
+    
 
-    <section>
-        <h2>Personal Info:</h2>
-        <ul>
-            <li><b>Major: </b>Computer Science</li>
-            <li><b>High School: </b>Riverton High 2019</li>
-            <li><b>Current year at UVU: </b>Sophomore</li>
-            <li><b>Favorite Ice cream: </b>Cookies and Cream</li>
-        </ul>
-    </section>
-    <hr>
+    <div>
+        <section>
+            <img src="img/self_pic.jpg" alt="Picture of Mitch">
 
-    <section>
-        <h2>My Five Favorite Books</h2>
-        <ol>
-            <li><cite>Zen and the Art of Motorcycle Maintenance </cite><a href="https://www.robertpirsig.org/" target="_blank">Robert M Pirsig</a></li>
-            <li><cite>Berserk </cite><a href="https://en.wikipedia.org/wiki/Kentaro_Miura" target="_blank">Kentaro Miura</a></li>
-            <li><cite>How to Win Friends and Influence People </cite><a href="https://en.wikipedia.org/wiki/Dale_Carnegie" target="_blank">Dale Carnegie</a></li>
-            <li><cite>The Way of Kings </cite><a href="https://www.brandonsanderson.com/" target="_blank">Brandon Sanderson</a></li>
-            <li><cite>The Alchemist </cite><a href="https://www.paulocoelho.com/" target="_blank">Paulo Coelho</a></li>
-        </ol>
-    </section>
-    <hr>
+            <h2>Personal Info:</h2>
+            <ul>
+                <li><b>Major: </b>Computer Science</li>
+                <li><b>High School: </b>Riverton High 2019</li>
+                <li><b>Current year at UVU: </b>Sophomore</li>
+                <li><b>Favorite Ice cream: </b>Cookies and Cream</li>
+            </ul>
+        </section>
 
-    <section class="haiku">
-        <h2>Nirvana</h2>
-        <p>To our black cat named Nirvana:</p>
-        <p>Look out the window<br>Stare at nothing for hours<br>She <em>is</em> Nirvana
-        </p>
+        <section>
+            <h2>My Five Favorite Books</h2>
+            <ol>
+                <li><cite>Zen and the Art of Motorcycle Maintenance </cite><a href="https://www.robertpirsig.org/" target="_blank">Robert M Pirsig</a></li>
+                <li><cite>Berserk </cite><a href="https://en.wikipedia.org/wiki/Kentaro_Miura" target="_blank">Kentaro Miura</a></li>
+                <li><cite>How to Win Friends and Influence People </cite><a href="https://en.wikipedia.org/wiki/Dale_Carnegie" target="_blank">Dale Carnegie</a></li>
+                <li><cite>The Way of Kings </cite><a href="https://www.brandonsanderson.com/" target="_blank">Brandon Sanderson</a></li>
+                <li><cite>The Alchemist </cite><a href="https://www.paulocoelho.com/" target="_blank">Paulo Coelho</a></li>
+            </ol>
+        </section>
 
-    </section>
-    <hr>
+        <section>
+            <h2>Nirvana</h2>
+            <p>To our black cat named Nirvana:</p>
+            <div id="haiku"><p>Look out the window<br>Stare at nothing for hours<br>She <em>is</em> Nirvana
+            </p></div>
 
-    <section>
-        <h2>My Personal Interests</h2>
-        <p>I enjoy spending time with my wife. We got married in the summer of 2023. Together, we enjoy taking walks, watching shows, cooking,
-        and talking to each other.</p>
-        <p>I like to create music. I have played guitar for a few years and enjoy playing with my band. I also like to do music production.</p>
-        <p>I like to make art. I have always loved to draw. I like to paint, make digital art, 3D model, animate, etc.
+        </section>
 
-    </section>
-    <hr>
+        <section>
+            <h2>My Personal Interests</h2>
+            <p>I enjoy spending time with my wife. We got married in the summer of 2023. Together, we enjoy taking walks, watching shows, cooking,
+            and talking to each other.</p>
+            <p>I like to create music. I have played guitar for a few years and enjoy playing with my band. I also like to do music production.</p>
+            <p>I like to make art. I have always loved to draw. I like to paint, make digital art, 3D model, animate, etc.
 
-    <section>
-        <h2>Class Schedule</h2>
-        <table>
-            <tr>
-                <td></td>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
+        </section>
 
-            <tr>
-                <td>12:30pm</td>
-                <td colspan="4">Lunch</td>
-                <td rowspan="4">Web Design</td>
-            </tr>
-            <tr>
-                <td>1:00pm</td>
-                <td rowspan="2" colspan="4">Work</td>
-            </tr>
-            <tr>
-                <td>1:30pm</td>
-            </tr>
-            <tr>
-                <td>2:00pm</td>
-                <td colspan="4">Drive Home</td>
-            </tr>
-            <tr>
-                <td>2:30pm</td>
-                <td rowspan="5">Discrete Math</td>
-                <td rowspan="5">Physics</td>
-                <td rowspan="3">Public Speaking</td>
-                <td rowspan="5">Discrete Math</td>
-                <td rowspan="6">Extra HW</td>                
-            </tr>
-            <tr>
-                <td>3:00pm</td>
-            </tr>
-            <tr>
-                <td>3:30pm</td>
-            </tr>
-            <tr>
-                <td>4:00pm</td>
-                <td rowspan="3">Web Design</td>
-            </tr>
-            <tr>
-                <td>4:30pm</td>
-            </tr>
-            <tr>
-                <td>5:00pm</td>
-                <td colspan="2">Dinner</td>
-                <td>Dinner</td>
-            </tr>
+        <section>
+            <h2>Class Schedule</h2>
+            <table>
+                <tr>
+                    <td></td>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+
+                <tr>
+                    <td>12:30pm</td>
+                    <td colspan="4">Lunch</td>
+                    <td rowspan="4" class="webdis">Web Design</td>
+                </tr>
+                <tr>
+                    <td>1:00pm</td>
+                    <td rowspan="2" colspan="4" class="xtra">Work</td>
+                </tr>
+                <tr>
+                    <td>1:30pm</td>
+                </tr>
+                <tr>
+                    <td>2:00pm</td>
+                    <td colspan="4">Drive Home</td>
+                </tr>
+                <tr>
+                    <td>2:30pm</td>
+                    <td rowspan="5" class="discrete">Discrete Math</td>
+                    <td rowspan="5" class="physics">Physics</td>
+                    <td rowspan="3" class="pubspeak">Public Speaking</td>
+                    <td rowspan="5" class="discrete">Discrete Math</td>
+                    <td rowspan="6" class="xtra">Extra HW</td>                
+                </tr>
+                <tr>
+                    <td>3:00pm</td>
+                </tr>
+                <tr>
+                    <td>3:30pm</td>
+                </tr>
+                <tr>
+                    <td>4:00pm</td>
+                    <td rowspan="3" class="webdis">Web Design</td>
+                </tr>
+                <tr>
+                    <td>4:30pm</td>
+                </tr>
+                <tr>
+                    <td>5:00pm</td>
+                    <td colspan="2">Dinner</td>
+                    <td>Dinner</td>
+                </tr>
 
 
-    </section>
+        </section>
+    </div>
 </body>
